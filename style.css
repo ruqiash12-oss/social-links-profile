@@ -1,0 +1,97 @@
+body{
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:  hsl(0, 0%, 12%);
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 350px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.profile-picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.name{
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+
+}
+.location{
+    color: hsl(75, 94%, 57%);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.information{
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+.links li {
+    margin-bottom: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.links a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  text-decoration: none;
+  padding: 15px 80px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+ul li a:hover{
+    color: black;
+    background-color: yellow;
+}
+@media (max-width: 400px) {
+  .page {
+    padding: 20px;
+  }
+
+  .profile-picture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+}
+.attribution {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  color: hsl(0, 0%, 60%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
